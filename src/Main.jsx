@@ -1,9 +1,10 @@
-import React from "react" ;
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {App} from "./App";
-import "./Main"
+import App from './App.jsx'; // Make sure App.jsx exists
+import './main.css';
 
-const rootDOMRef = document.getElementById("root");
-const root = ReactDOM.createRoot(rootDOMRef);
-
-root.render(<App/>)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
