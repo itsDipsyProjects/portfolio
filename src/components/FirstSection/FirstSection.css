@@ -22,14 +22,14 @@ body{
 nav{
     width: 50vw;
 }
-ul{
+nav ul{
     display: flex;
     gap: 50px;
     justify-content: end;
     padding-right: 100px;
     padding-top: 20px;
 }
-li{
+nav ul li{
     list-style: none;
     font-size: 17px;
     font-family: roboto;
@@ -114,7 +114,15 @@ li{
     gap: 40px;
 }
 
-p{
+.firstInfo{
+    position: relative;
+    bottom: 20px;
+    
+    font-size: 0.8vi;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+.secondInfo{
     position: relative;
     bottom: 20px;
     
