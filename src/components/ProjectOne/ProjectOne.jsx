@@ -49,7 +49,7 @@ function ProjectOne(){
 
                     <div className="date">
                         <p className="split">DATE</p>
-                        <p className="split">2025/05/28</p>
+                        <p className="split">2025/05/12</p>
                     </div>
 
                     <div className="firstImage image">
