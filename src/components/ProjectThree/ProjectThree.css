@@ -42,7 +42,7 @@
     
     .projectDescription p {
         width: 350px;
-        font-size: 1.2vi;
+        font-size: 0.9vi;
         padding: 0;
         margin: 0;
         margin-top: 10px;
@@ -58,11 +58,11 @@
     }
     
     
-    .firstImage{
+    .firstImage3{
         position: absolute;
         width: 25vw;
         height: 30vh;
-        background-image: url("./assets/PaulsWeb.png");
+        background-color: grey;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -70,11 +70,11 @@
         top: 20%;
     }
     
-    .secondImage{
+    .secondImage3{
         position:absolute;
         width: 10vw;
         height: 30vh;
-        background-image: url("./assets/first.png");
+        background-color: grey;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -82,11 +82,11 @@
         left: 16%;
     }
     
-    .thirdImage{
+    .thirdImage3{
         position:absolute;
         width: 15vw;
         height: 20vh;
-        background-image: url("./assets/eye.jpg");
+        background-color: grey;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -95,11 +95,11 @@
     }
     
     
-    .fourthImage{
+    .fourthImage3{
         position:absolute;
         width: 10vw;
         height: 15vh;
-        background-image: url("./assets/person.jpg");
+        background-color: grey;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -173,7 +173,7 @@
         position: absolute;
         width: 20vw;
         height: 20vh;
-        background-image: url("./assets/PaulsWeb.png");
+        
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -185,7 +185,7 @@
         position:absolute;
         width: 10vw;
         height: 20vh;
-        background-image: url("./assets/first.png");
+      
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -197,7 +197,7 @@
         position:absolute;
         width: 15vw;
         height: 15vh;
-        background-image: url("./assets/eye.jpg");
+       
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -210,7 +210,7 @@
         position:absolute;
         width: 10vw;
         height: 15vh;
-        background-image: url("./assets/person.jpg");
+     
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

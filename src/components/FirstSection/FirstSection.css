@@ -6,7 +6,7 @@
 
 
 /* ====== Desktop ====== */
-@media screen and (width >= 2800px) {
+@media screen and (min-width: 1500px) and (max-width: 2800px) {
 
   body { animation: blurTransistion 1s ease-out; }
 
@@ -41,7 +41,7 @@
   }
 
   .middleSection {
-    height: 700px;
+    height: 55vh;
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -56,7 +56,7 @@
     gap: 40px;
   }
   .projectsContainer > div {
-    width: 40px;                 /* <-- the important part */
+    width: 100px;                 /* <-- the important part */
     transition: all 0.5s ease-in-out;
     filter: grayscale(100%);
   }
@@ -74,7 +74,7 @@
   }
   .secondProject{
     height: 400px;
-    background-image: url("./assets/smahser.jpg");
+    background-image: url("./assets/ElliotsIsland.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +82,7 @@
   .thirdProject{
     height: 400px;
     background-color: black;
-    background-image: url("./assets/ElliotsIsland.jpg");
+    background-image: url("./assets/smahser.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,8 +99,6 @@
 
   .firstInfo,
   .secondInfo {
-    position: relative;
-    bottom: 20px;
     font-size: 0.8vi;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -134,7 +132,7 @@
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end;
   }
   .firstInfo{
@@ -144,20 +142,13 @@
   }
   .secondInfo{
     margin: 0;
-    position: absolute;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 0;
-    top: 30px;
     padding: 0;
-    margin-right: 100px;
+    margin-right: 50px;
   }
 }
 
 /* ====== Laptop ====== */
-@media screen and (width >= 1200px) {
+@media screen and (max-width: 1499px) {
 
   body { animation: blurTransistion 1s ease-out; }
 

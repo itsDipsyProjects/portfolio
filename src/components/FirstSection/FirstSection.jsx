@@ -3,6 +3,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
 import ProjectOne from "../ProjectOne/ProjectOne";
+import ProjectTwo from "../ProjectTwo/ProjectTwo";
+import ProjectThree from "../ProjectThree/ProjectThree";
+
 
 import "./FirstSection.css";
 
@@ -12,6 +15,8 @@ gsap.registerPlugin(SplitText);
 export function FirstSection() {
     const firstSectionContainer = useRef();
     let [project1Clicked, setProject1Clicked] = useState();
+    let [project2Clicked, setProject2Clicked] = useState();
+    let [project3Clicked, setProject3Clicked] = useState();
 
     useGSAP(() => {
         const split = new SplitText(".split", { type: "words, chars" });
@@ -51,11 +56,70 @@ export function FirstSection() {
 
 
     }
+    
+    function clearAndShowSecondProject() {
 
+        const split = new SplitText(".split", { type: "words, chars" });
+            gsap.to(".middleSection", {
+                duration: 0.6,
+                width: 0,
+                autoAlpha:0,
+                ease: "power2.in",
+                stagger: 0,
+            })
+            gsap.to(split.chars, {
+                duration: 0.6,
+                y: -50,
+                autoAlpha: 0,
+                ease: "power2.in",
+                stagger: 0.01,
+                onComplete: () => {
+                    setProject2Clicked(true); 
+                }
+            });
+
+
+    }
+
+    function clearAndShowThirdProject() {
+
+        const split = new SplitText(".split", { type: "words, chars" });
+            gsap.to(".middleSection", {
+                duration: 0.6,
+                width: 0,
+                autoAlpha:0,
+                ease: "power2.in",
+                stagger: 0,
+            })
+            gsap.to(split.chars, {
+                duration: 0.6,
+                y: -50,
+                autoAlpha: 0,
+                ease: "power2.in",
+                stagger: 0.01,
+                onComplete: () => {
+                    setProject3Clicked(true); 
+                }
+            });
+
+
+    }
 
     if(project1Clicked){
         return(
             <><ProjectOne></ProjectOne></>
+        )
+    }
+
+    else if(project2Clicked){
+        return(
+            <><ProjectTwo></ProjectTwo></>
+        )
+    }
+
+    else if(project3Clicked){
+        return(
+            <><ProjectThree></ProjectThree></>
         )
     }
     
@@ -78,8 +142,8 @@ export function FirstSection() {
                     <div className="middleSection">
                         <div className="projectsContainer">
                             <div onClick={clearAndShowFirstProject} className="firstProject"></div>
-                            <div className="secondProject"></div>
-                            <div className="thirdProject"></div>
+                            <div onClick={clearAndShowSecondProject} className="secondProject"></div>
+                            <div onClick={clearAndShowThirdProject} className="thirdProject"></div>
                             <div className="fourthProject"></div>
                         </div>
                     </div>
