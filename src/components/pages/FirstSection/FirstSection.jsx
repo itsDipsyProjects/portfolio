@@ -6,6 +6,7 @@ import SplitText from "gsap/SplitText";
 import ProjectOne from "../ProjectOne/ProjectOne";
 import ProjectTwo from "../ProjectTwo/ProjectTwo";
 import ProjectThree from "../ProjectThree/ProjectThree";
+import { useInitialTextAnimation } from "../../../utils/useInitialTextAnimation";
 
 import "./FirstSection.css";
 
@@ -13,52 +14,34 @@ gsap.registerPlugin(useGSAP, SplitText);
 
 export function FirstSection() {
   const containerRef = useRef(null);
-  const splitRef = useRef(null);
+  const [activeProject, setActiveProject] = useState(null);
 
-  const [activeProject, setActiveProject] = useState(null); 
-
-  function initalTextAnimation(){
-      useGSAP(() => {
-          splitRef.current = new SplitText((".split"), { type: "words,chars" });
-          gsap.from(splitRef.current.chars, {
-            delay: 1.2,
-            duration: 1,
-            y: 50,
-            autoAlpha: 0,
-            ease: "power2.out",
-            stagger: 0.01,
-          });
-    
-          return () => {};
-        },
-        { scope: containerRef }
-      );
-  }
-
-  initalTextAnimation();
+  useInitialTextAnimation(containerRef);
 
   const switchBetweenProjectsAnimation = (which) => {
-    const split = splitRef.current;
-    if (!split) return;
+    const container = containerRef.current;
+    if (!container) return;
+
+    const split = new SplitText(container.querySelectorAll(".split"), {
+      type: "words,chars",
+    });
 
     gsap
       .timeline({
         defaults: { duration: 0.6, ease: "power2.in" },
-        onComplete: () => setActiveProject(which),
+        onComplete: () => {
+          split.revert();         
+          setActiveProject(which);
+        },
       })
-      .to(containerRef.current.querySelector(".middleSection"), {
-        width: 0,
-        autoAlpha: 0,
-      }, 0)
+      .to(container.querySelector(".middleSection"), { width: 0, autoAlpha: 0 }, 0)
       .to(split.chars, { y: -50, autoAlpha: 0, stagger: 0.01 }, 0);
   };
 
-  
   if (activeProject === "one") return <ProjectOne />;
   if (activeProject === "two") return <ProjectTwo />;
   if (activeProject === "three") return <ProjectThree />;
 
-  
   return (
     <div ref={containerRef} className="firstSectionContainer">
       <div className="logoDiv">

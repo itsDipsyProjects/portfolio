@@ -2,23 +2,18 @@ import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
+import { useInitialTextAnimation } from "../../../utils/useInitialTextAnimation";
 import "./ProjectOne.css"
 function ProjectOne(){
-    
+    const containerRefFirst = useRef(null);
+    const containerRefSecond = useRef(null);
     gsap.registerPlugin(useGSAP);
     gsap.registerPlugin(SplitText);
+    
+    useInitialTextAnimation(containerRefFirst);
+    useInitialTextAnimation(containerRefSecond);
 
     useGSAP(() => {
-        const split = new SplitText(".split", { type: "words, chars" });
-        gsap.from(split.chars, {
-            delay: 0.2,          
-            duration: 1.2,
-            y: 50,
-            autoAlpha: 0,
-            ease: "power2.out",
-            stagger: 0.005   
-        });
-
         gsap.from(".image", {
             delay: 0.2,
             duration: 1,
@@ -28,11 +23,16 @@ function ProjectOne(){
         })
         
     })
-   return (
+   
+    return (
         <>
             <div>
-                <h1 className="split">PAUL <br /> COLLINS</h1>
-                <div className="middleSection2">
+                <h1 ref={containerRefSecond} >
+                    <span className="split">PAUL</span>
+                    <br />
+                    <span className="split">COLLINS</span>
+                </h1>
+                <div ref={containerRefFirst} className="middleSection2">
                     <div className="techStack">
                         <p className="split">TECH STACK</p>
                         <ul>
