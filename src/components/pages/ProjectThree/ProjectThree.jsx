@@ -44,7 +44,7 @@ function ProjectThree(){
                         </ul>
                     </div>
                     <div className="projectDescription">
-                        <p className="split">THIS PROJECT IS IN THE MAKING AND GOING TO BE A TRANING GROUNDS FIGHTING EXPIRENCE</p>
+                        <p className="split">THIS PROJECT IS IN THE MAKING AND HAS ITS PURPOSE TO BE A THREE JS AND GLSL TOOLKIT</p>
                     </div>
 
                     <div className="date">

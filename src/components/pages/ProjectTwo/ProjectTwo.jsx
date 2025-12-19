@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
-import "./ProjectOne.css"
+import "./ProjectTwo.css"
 function ProjectOne(){
     
     gsap.registerPlugin(useGSAP);
@@ -31,41 +31,41 @@ function ProjectOne(){
    return (
         <>
             <div>
-                <h1 className="split">PAUL <br /> COLLINS</h1>
+                <h1 className="split">ELLIOTS <br /> ISLAND</h1>
                 <div className="middleSection2">
                     <div className="techStack">
                         <p className="split">TECH STACK</p>
                         <ul>
-                            <li className="split">REACT</li>
                             <li className="split">NODE.JS</li>
-                            <li className="split">THREE.JS</li>
-                            <li className="split">GLSL</li>
                             <li className="split">FIGMA</li>
+                            <li className="split">TILED</li>
+                            <li className="split">JAVASCRIPT</li>
+                            <li className="split">CANVAS 2D</li>
                         </ul>
                     </div>
                     <div className="projectDescription">
-                        <p className="split">THIS PROJECT WAS DEVELOPMENT FOR PAUL COLLINS OWN DESIGN AGENCY</p>
+                        <p className="split">ELLIOTS ISLAND WAS A WEBBASED 2D GAME DEMO FOR A SCHOOL PROJECT</p>
                     </div>
 
                     <div className="date">
                         <p className="split">DATE</p>
-                        <p className="split">2025/05/12</p>
+                        <p className="split">2023/02/18</p>
                     </div>
 
-                    <div className="firstImage image">
+                    <div className="firstImage2 image">
                       
                     </div>
 
-                    <div className="secondImage image">
+                    <div className="secondImage2 image">
                 
                     </div>
 
                     
-                    <div className="thirdImage image">
+                    <div className="thirdImage2 image">
                       
                     </div>
 
-                    <div className="fourthImage image">
+                    <div className="fourthImage2 image">
                       
                     </div>
                 </div>
