@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
+import { BackArrow } from "../../BackArrow/BackArrow";
 import { useInitialTextAnimation } from "../../../utils/useInitialTextAnimation";
 import "./ProjectOne.css"
 function ProjectOne(){
