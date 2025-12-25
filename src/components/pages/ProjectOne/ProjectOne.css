@@ -106,6 +106,23 @@
         bottom: 15%;
         left: 80%;
     }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        width: 100vw;
+        justify-content: space-between;
+    }
+    footer p{
+        margin-right: 100px;
+        font-size: 21px;
+        font-family: "Roboto", sans-serif;
+    }
 }
 
 

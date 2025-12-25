@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { BackArrow } from "../../BackArrow/BackArrow";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
@@ -69,6 +70,10 @@ function ProjectOne(){
                       
                     </div>
                 </div>
+                <footer>
+                   <BackArrow className="split"></BackArrow>
+                   <p className="split"> <a href="https://github.com/itsDipsyProjects/Elliots_Island">GITHUB REPO</a></p>
+                </footer>
             </div>
         </>
     )

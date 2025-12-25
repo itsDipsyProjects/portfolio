@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
+import { BackArrow } from "../../BackArrow/BackArrow";
 import "./ProjectThree.css"
 function ProjectThree(){
     
@@ -52,23 +53,16 @@ function ProjectThree(){
                         <p className="split">2023/02/18</p>
                     </div>
 
-                    <div className="firstImage3 image">
-                      
-                    </div>
-
-                    <div className="secondImage3 image">
-                
-                    </div>
-
                     
-                    <div className="thirdImage3 image">
-                      
-                    </div>
+                    <video className="video image" src="./assets/test.mp4" autoPlay loop muted ></video>
+                    
 
-                    <div className="fourthImage3 image">
-                      
-                    </div>
+                  
                 </div>
+                <footer>
+                    <BackArrow className="split"></BackArrow>
+                    <p className="split"> <a href="https://github.com/itsDipsyProjects/Smasher">GITHUB REPO</a></p>
+                </footer>
             </div>
         </>
     )

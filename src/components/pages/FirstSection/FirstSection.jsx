@@ -20,9 +20,7 @@ export function FirstSection() {
 
   const switchBetweenProjectsAnimation = (which) => {
     const container = containerRef.current;
-    if (!container) return;
-
-    const split = new SplitText(container.querySelectorAll(".split"), {
+    const split = new SplitText(".split", {
       type: "words,chars",
     });
 
@@ -67,7 +65,7 @@ export function FirstSection() {
 
       <div className="bottomSection">
         <p className="firstInfo split">DEV/DESIGNER BASED IN MALMÖ</p>
-        <p className="secondInfo split">DOWNLOAD RESUME</p>
+        <p className="secondInfo split"><a href="public/CV.PDF">DOWNLOAD RESUME</a></p>
       </div>
     </div>
   );
