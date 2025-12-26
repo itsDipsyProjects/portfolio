@@ -6,7 +6,7 @@
 
 
 /* ====== Desktop ====== */
-@media screen and (min-width: 1500px) and (max-width: 2800px) {
+@media screen and (min-width: 1501px) and (max-width: 2800px) {
 
   body { animation: blurTransistion 1s ease-out; }
 
@@ -67,20 +67,20 @@
 
   /* Individual tiles: heights & backgrounds only (no width here) */
   .firstProject{
-    height: 400px;
+    height: 350px;
     background-image: url("./assets/PaulsWeb.png");
     background-position: center;
     background-size: cover;
   }
   .secondProject{
-    height: 400px;
+    height: 350px;
     background-image: url("./assets/ElliotsIsland.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .thirdProject{
-    height: 400px;
+    height: 350px;
     background-color: black;
     background-image: url("./assets/smahser.jpg");
     background-position: center;
@@ -89,7 +89,7 @@
     filter: grayscale(80%);
   }
   .fourthProject{
-    height: 400px;
+    height: 350px;
     background-color: rgb(223, 223, 223);
     display: flex;
     justify-content: center;
@@ -148,13 +148,13 @@
 }
 
 /* ====== Laptop ====== */
-@media screen and (max-width: 1499px) {
+@media screen and (min-width: 1499px) {
 
   body { animation: blurTransistion 1s ease-out; }
 
   .logoDiv {
     width: 100vw;
-    height: 200px;
+    height: 250px;
     display: flex;
   }
   .logoText { width: 50vw; }
@@ -277,7 +277,7 @@
     height: 10vh;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
   }
   .firstInfo{
     margin: 0;
@@ -292,7 +292,6 @@
     justify-content: center;
     align-items: center;
     right: 0;
-    top: 30px;
     padding: 0;
     margin-right: 100px;
   }
