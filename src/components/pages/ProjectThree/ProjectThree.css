@@ -1,0 +1,131 @@
+@media screen and (min-width: 1500px) and (max-width: 2800px) {
+
+    h1{
+        margin: 0;
+        padding: 0;
+        font-size: 3.5vi;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+    .middleSection2{
+        padding-top: 200px;
+        width: 50vw;
+        height: 500px;
+        display: flex;
+        margin-left: 50px;
+        gap: 100px;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+    }
+    
+    .techStack{
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 0.6vi;
+        & ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    
+    .projectDescription p {
+        width: 350px;
+        font-size: 0.9vi;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        font-weight: 460;
+    }
+    
+    .date{
+        width: 200px;
+        position: relative;
+        right: 50px;
+        font-size: 0.6vi;
+        font-weight: 500;
+    }
+    
+    .video{
+        object-fit: cover;
+        width: 40vw;
+        height: 100vh;
+        position: absolute;
+        right: 200px;
+        bottom: 200px;
+    }
+
+}
+
+
+@media screen and (max-width: 1499px){
+
+    h1{
+        margin: 0;
+        padding: 0;
+        font-size: 3.5vi;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+    .middleSection2{
+        padding-top: 100px;
+        width: 50vw;
+        height: 500px;
+        display: flex;
+        margin-left: 50px;
+        gap: 100px;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+    }
+    
+    .techStack{
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 0.7vi;
+        & ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    
+    .projectDescription p {
+        width: 200px;
+        font-size: 1.2vi;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        font-weight: 460;
+    }
+    
+    .date{
+        width: 200px;
+        position: relative;
+        right: 50px;
+        font-size: 0.7vi;
+        font-weight: 500;
+    }
+
+}
