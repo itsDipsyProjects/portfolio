@@ -4,8 +4,8 @@ import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
 import { BackArrow } from "../../BackArrow/BackArrow";
 import { useInitialTextAnimation } from "../../../utils/useInitialTextAnimation";
-import { FirstSection } from "../FirstSection/FirstSection";
 import "./ProjectOne.css";
+
 
 gsap.registerPlugin(useGSAP, SplitText);
 
@@ -13,11 +13,11 @@ function ProjectOne() {
   const mainContainer = useRef(null);
   const containerRefFirst = useRef(null);
   const containerRefSecond = useRef(null);
-
+  const footerRefrence = useRef(null);
   useInitialTextAnimation(containerRefFirst);
   useInitialTextAnimation(containerRefSecond);
+  useInitialTextAnimation(footerRefrence);
 
- 
   useGSAP(
     () => {
       gsap.from(".image", {
@@ -32,20 +32,16 @@ function ProjectOne() {
     { scope: mainContainer }
   );
 
-  function test(){
-    console.log("hello")
-  }
- 
   return (
     <div ref={mainContainer}>
-      <h1 ref={containerRefSecond}>
+      <h1 className="p1h1" ref={containerRefSecond}>
         <span className="split">PAUL</span>
         <br />
         <span className="split">COLLINS</span>
       </h1>
 
-      <div ref={containerRefFirst} className="middleSection2">
-        <div className="techStack">
+      <div ref={containerRefFirst} className="p1MiddleSection2">
+        <div className="p1TechStack">
           <p className="split">TECH STACK</p>
           <ul>
             <li className="split">REACT</li>
@@ -55,7 +51,7 @@ function ProjectOne() {
           </ul>
         </div>
 
-        <div className="projectDescription">
+        <div className="p1ProjectDescription">
           <p className="split">THIS PROJECT WAS DEVELOPMENT FOR PAUL COLLINS OWN DESIGN AGENCY</p>
         </div>
 
@@ -64,15 +60,15 @@ function ProjectOne() {
           <p className="split">2025/05/12</p>
         </div>
 
-        <div className="firstImage image"></div>
-        <div className="secondImage image"></div>
-        <div className="thirdImage image"></div>
-        <div className="fourthImage image"></div>
+        <div className="p1FirstImage image"></div>
+        <div className="p1SecondImage image"></div>
+        <div className="p1ThirdImage image"></div>
+        <div className="p1FourthImage image"></div>
       </div>
 
-      <footer>
+      <footer ref={footerRefrence}>
        <BackArrow className="split"></BackArrow>
-       <p className="split"> <a href="https://github.com/itsDipsyProjects/portfolio">GITHUB REPO</a></p>
+       <p> <a className="split" href="https://github.com/itsDipsyProjects/portfolio">GITHUB REPO</a></p>
       </footer>
     </div>
   );

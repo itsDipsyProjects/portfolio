@@ -9,6 +9,7 @@ import ProjectThree from "../ProjectThree/ProjectThree";
 import { useInitialTextAnimation } from "../../../utils/useInitialTextAnimation";
 
 import "./FirstSection.css";
+import { AboutMe } from "../AboutMe/AboutMe";
 
 gsap.registerPlugin(useGSAP, SplitText);
 
@@ -39,6 +40,7 @@ export function FirstSection() {
   if (activeProject === "one") return <ProjectOne />;
   if (activeProject === "two") return <ProjectTwo />;
   if (activeProject === "three") return <ProjectThree />;
+  if(activeProject === "aboutme") return <AboutMe />;
 
   return (
     <div ref={containerRef} className="firstSectionContainer">
@@ -48,7 +50,7 @@ export function FirstSection() {
         </h1>
         <nav>
           <ul>
-            <li className="split">ABOUT</li>
+            <li className="split" onClick={()=>{switchBetweenProjectsAnimation("aboutme")}}>ABOUT</li>
             <li className="split">CONTACT</li>
           </ul>
         </nav>

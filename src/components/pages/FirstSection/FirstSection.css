@@ -223,7 +223,7 @@ a{
   }
   .secondProject{
     height: 250px;
-    background-image: url("./assets/smahser.jpg");
+    background-image: url("./assets/ElliotsIsland.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +231,7 @@ a{
   .thirdProject{
     height: 250px;
     background-color: black;
-    background-image: url("./assets/ElliotsIsland.jpg");
+    background-image: url("./assets/smahser.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,6 +1,6 @@
 @media screen and (min-width: 1500px) and (max-width: 2800px) {
 
-    h1{
+    .p1h1{
         margin: 0;
         padding: 0;
         font-size: 3.5vi;
@@ -13,7 +13,7 @@
     body{
         overflow-x: hidden;
     }
-    .middleSection2{
+    .p1MiddleSection2{
         padding-top: 200px;
         width: 50vw;
         height: 500px;
@@ -24,7 +24,7 @@
         font-optical-sizing: auto;
     }
     
-    .techStack{
+    .p1TechStack{
         display: flex;
         flex-direction: column;
         font-weight: 500;
@@ -58,7 +58,7 @@
     }
     
     
-    .firstImage{
+    .p1FirstImage{
         position: absolute;
         width: 25vw;
         height: 30vh;
@@ -70,7 +70,7 @@
         top: 20%;
     }
     
-    .secondImage{
+    .p1SecondImage{
         position:absolute;
         width: 10vw;
         height: 30vh;
@@ -82,7 +82,7 @@
         left: 16%;
     }
     
-    .thirdImage{
+    .p1ThirdImage{
         position:absolute;
         width: 15vw;
         height: 20vh;
@@ -95,7 +95,7 @@
     }
     
     
-    .fourthImage{
+    .p1FourthImage{
         position:absolute;
         width: 10vw;
         height: 15vh;
@@ -126,9 +126,9 @@
 }
 
 
-@media screen and (max-width: 1499px){
+@media screen and (min-width: 1499px){
 
-    h1{
+    .p1h1{
         margin: 0;
         padding: 0;
         font-size: 3.5vi;
@@ -141,10 +141,10 @@
     body{
         overflow-x: hidden;
     }
-    .middleSection2{
+    .p1MiddleSection2{
         padding-top: 100px;
         width: 50vw;
-        height: 500px;
+        height: 100px;
         display: flex;
         margin-left: 50px;
         gap: 100px;
@@ -152,11 +152,11 @@
         font-optical-sizing: auto;
     }
     
-    .techStack{
+    .p1TechStack{
         display: flex;
         flex-direction: column;
         font-weight: 500;
-        font-size: 0.7vi;
+        font-size: 0.9vi;
         & ul{
             list-style: none;
             display: flex;
@@ -168,9 +168,9 @@
     }
     
     
-    .projectDescription p {
-        width: 200px;
-        font-size: 1.2vi;
+    .p1ProjectDescription p {
+        width: 300px;
+        font-size: 1.1vi;
         padding: 0;
         margin: 0;
         margin-top: 10px;
