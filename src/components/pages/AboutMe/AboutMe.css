@@ -1,0 +1,58 @@
+.abtMeMiddleSection{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.abtMeImageOfMe1{
+    width: 120px;
+    height: 230px;
+    background-image: url("../../../../public/assets/me1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 320px;
+    left: 550px;
+}
+
+.abtMeImageOfMe2{
+    width: 300px;
+    height: 200px;
+    background-image: url("../../../../public/assets/me2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+
+.abtMeImageOfMe3{
+    width: 150px;
+    height: 150px;
+    background-image: url("../../../../public/assets/me3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+
+.abtMeTextContainer{
+    width: 300px;
+    margin-right: 200px;
+}
+.abtMeText{
+    width: 300px;
+    font-size: 21px;
+}
+
+.abtMeTextContainer h1{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
