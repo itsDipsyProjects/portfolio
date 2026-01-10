@@ -66,8 +66,10 @@ export function FirstSection() {
       </div>
 
       <div className="bottomSection">
-        <p className="firstInfo split">DEV/DESIGNER BASED IN MALMÖ</p>
-        <p className="secondInfo split"><a href="public/CV.PDF">DOWNLOAD RESUME</a></p>
+        <div className="test">
+          <p className="firstInfo split">DEV/DESIGNER BASED IN MALMÖ</p>
+          <p className="secondInfo split"><a href="public/CV.PDF">DOWNLOAD RESUME</a></p>
+        </div>
       </div>
     </div>
   );

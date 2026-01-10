@@ -9,287 +9,169 @@ a{
   text-decoration: none;
 }
 
-/* ====== Desktop ====== */
-@media screen and (min-width: 1501px) and (max-width: 2800px) {
+body { animation: blurTransistion 1s ease-out; }
 
-  body { animation: blurTransistion 1s ease-out; }
-
-  .logoDiv {
-    width: 100vw;
-    height: 400px;
-    display: flex;
-  }
-  .logoText { width: 50vw; }
-  nav { width: 50vw; }
-  nav ul {
-    display: flex;
-    gap: 50px;
-    justify-content: end;
-    padding-right: 100px;
-    padding-top: 20px;
-  }
-  nav ul li {
-    list-style: none;
-    font-size: 17px;
-    font-family: roboto;
-  }
-
-  .logoDiv h1{
-    margin: 0;
-    padding: 0;
-    font-size: 3.5vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    margin-top: 20px;
-    margin-left: 50px;
-  }
-
-  .middleSection {
-    height: 55vh;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-  }
-
-  /* Base tile sizing: keep all at 40px width */
-  .projectsContainer {
-    display: flex;
-    width: 100vw;
-    justify-content: center; 
-    align-items: center;
-    gap: 40px;
-  }
-  .projectsContainer > div {
-    width: 100px;                 /* <-- the important part */
-    transition: all 0.5s ease-in-out;
-    filter: grayscale(100%);
-  }
-  .projectsContainer > div:hover {
-    width: 150px;                /* optional: grow on hover */
-    filter: grayscale(0%);
-  }
-
-  /* Individual tiles: heights & backgrounds only (no width here) */
-  .firstProject{
-    height: 350px;
-    background-image: url("./assets/PaulsWeb.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .secondProject{
-    height: 350px;
-    background-image: url("./assets/ElliotsIsland.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .thirdProject{
-    height: 350px;
-    background-color: black;
-    background-image: url("./assets/smahser.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: grayscale(80%);
-  }
-  .fourthProject{
-    height: 350px;
-    background-color: rgb(223, 223, 223);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(80%);
-  }
-
-  .firstInfo,
-  .secondInfo {
-    font-size: 0.8vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-  }
-
-  .projectDescriptions {
-    position: absolute;
-    left: 0;
-    width: 10vw;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 60px;
-    margin-top: 35px;
-  }
-  .projectDescriptions div{
-    margin: 0;
-    font-size: 0.6vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto; 
-  }
-  .projectDescriptions div span{
-    margin-right: 30px;
-    font-size: 0.6vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto; 
-  }
-
-  .bottomSection{
-    position: relative;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .firstInfo{
-    margin: 0;
-    padding: 0;
-    margin-left: 50px;
-  }
-  .secondInfo{
-    margin: 0;
-    padding: 0;
-    margin-right: 50px;
-  }
-
-
-  
+.logoDiv {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+}
+.logoText { width: 50vw; }
+nav { width: 50vw; }
+nav ul {
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+  padding-right: 60px;
+  padding-top: 40px;
+}
+nav ul li {
+  list-style: none;
+  font-size: 15px;
+  font-family: roboto;
 }
 
-/* ====== Laptop ====== */
-@media screen and (min-width: 1499px) {
+.logoDiv h1{
+  margin: 0;
+  padding: 0;
+  font-size: 3.5vi;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  margin-top: 20px;
+  margin-left: 50px;
+}
 
-  body { animation: blurTransistion 1s ease-out; }
+.middleSection {
+  height: 70vh;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
 
-  .logoDiv {
-    width: 100vw;
-    height: 250px;
-    display: flex;
-  }
-  .logoText { width: 50vw; }
-  nav { width: 50vw; }
-  nav ul {
-    display: flex;
-    gap: 50px;
-    justify-content: end;
-    padding-right: 60px;
-    padding-top: 40px;
-  }
-  nav ul li {
-    list-style: none;
-    font-size: 12px;
-    font-family: roboto;
-  }
+/* Base tile sizing: keep all at 40px width */
+.projectsContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: center; 
+  align-items: center;
+  gap: 40px;
+}
+.projectsContainer > div {
+  width: 70px;                 /* <-- the important part */
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100%);
+}
+.projectsContainer > div:hover {
+  width: 120px;                /* optional: grow on hover */
+  filter: grayscale(0%);
+}
 
-  .logoDiv h1{
-    margin: 0;
-    padding: 0;
-    font-size: 3.5vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    margin-top: 20px;
-    margin-left: 50px;
-  }
+/* Individual tiles: heights & backgrounds only (no width here) */
+.firstProject{
+  height: 35vh;
+  background-image: url("/assets/me2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.secondProject{
+  height: 35vh;
+  background-image: url("./assets/ElliotsIsland.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thirdProject{
+  height: 35vh;
+  background-color: black;
+  background-image: url("./assets/smahser.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(80%);
+}
+.fourthProject{
+  height: 35vh;
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(80%);
+}
 
-  .middleSection {
-    height: 400px;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-  }
+.firstInfo,
+.secondInfo {
+  position: relative;
+  bottom: 20px;
+  font-size: 0.8vi;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
 
-  /* Base tile sizing: keep all at 40px width */
-  .projectsContainer {
-    display: flex;
-    width: 100vw;
-    justify-content: center; 
-    align-items: center;
-    gap: 40px;
-  }
-  .projectsContainer > div {
-    width: 70px;                 /* <-- the important part */
-    transition: all 0.5s ease-in-out;
-    filter: grayscale(100%);
-  }
-  .projectsContainer > div:hover {
-    width: 120px;                /* optional: grow on hover */
-    filter: grayscale(0%);
-  }
+.projectDescriptions {
+  position: absolute;
+  left: 0;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 60px;
+  margin-top: 35px;
+}
+.projectDescriptions div{
+  margin: 0;
+  font-size: 0.6vi;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto; 
+}
+.projectDescriptions div span{
+  margin-right: 30px;
+  font-size: 0.6vi;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto; 
+}
 
-  /* Individual tiles: heights & backgrounds only (no width here) */
-  .firstProject{
-    height: 250px;
-    background-image: url("/assets/me2.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-  .secondProject{
-    height: 250px;
-    background-image: url("./assets/ElliotsIsland.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .thirdProject{
-    height: 250px;
-    background-color: black;
-    background-image: url("./assets/smahser.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: grayscale(80%);
-  }
-  .fourthProject{
-    height: 250px;
-    background-color: rgb(223, 223, 223);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(80%);
-  }
+.bottomSection{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomSection .test {
+  justify-self: center;
+  display: flex;
+  width: 95%;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  justify-self: center;
+  align-self: center;
+}
 
-  .firstInfo,
-  .secondInfo {
-    position: relative;
-    bottom: 20px;
-    font-size: 0.8vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-  }
-
-  .projectDescriptions {
-    position: absolute;
-    left: 0;
-    width: 10vw;
+@media only screen and (max-width: 555px) {
+  .projectsContainer{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-left: 60px;
-    margin-top: 35px;
+    width: 100vw;
+
   }
-  .projectDescriptions div{
-    margin: 0;
-    font-size: 0.6vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto; 
-  }
-  .projectDescriptions div span{
-    margin-right: 30px;
-    font-size: 0.6vi;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto; 
+  .projectsContainer div{
+    width: 50%;
+    height: 100px;
   }
 
-  .bottomSection{
-    position: relative;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  nav ul li{
+    font-size: 2vi;
   }
-  .firstInfo{
-    margin-top: 4vh;
+
+  .logoDiv{
+    height: 30%;
+    margin-bottom: 100px;
   }
-  .secondInfo{
-    margin-top: 4vh;
-  }
+
+ .bottomSection{
+  display: none;
+ }
+
 }
+

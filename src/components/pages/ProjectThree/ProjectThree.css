@@ -58,12 +58,12 @@
     }
     
     .video{
-        object-fit: cover;
-        width: 40vw;
-        height: 100vh;
+        object-fit: contain;
+        width: 50vw;
+        height: 50vh;
         position: absolute;
         right: 200px;
-        bottom: 200px;
+        bottom: 400px;
     }
 
 }

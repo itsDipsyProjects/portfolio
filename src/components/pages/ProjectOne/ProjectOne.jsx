@@ -33,11 +33,10 @@ function ProjectOne() {
   );
 
   return (
-    <div ref={mainContainer}>
+    <div className="p1Container" ref={mainContainer}>
       <h1 className="p1h1" ref={containerRefSecond}>
-        <span className="split">PAUL</span>
-        <br />
-        <span className="split">COLLINS</span>
+        <span className="split">PORTFOLIO</span> 
+        <span className="split">SITE</span>
       </h1>
 
       <div ref={containerRefFirst} className="p1MiddleSection2">
@@ -52,7 +51,7 @@ function ProjectOne() {
         </div>
 
         <div className="p1ProjectDescription">
-          <p className="split">THIS PROJECT WAS DEVELOPMENT FOR PAUL COLLINS OWN DESIGN AGENCY</p>
+          <p className="split">THIS PROJECT WAS THE SITE YOUR CURRENTLY WHICH HAS ITS PURPOSE FOR ME TO POST MY SIDE PROJECTS</p>
         </div>
 
         <div className="date">
@@ -60,13 +59,10 @@ function ProjectOne() {
           <p className="split">2025/05/12</p>
         </div>
 
-        <div className="p1FirstImage image"></div>
-        <div className="p1SecondImage image"></div>
-        <div className="p1ThirdImage image"></div>
-        <div className="p1FourthImage image"></div>
+        <video className="video image" src="/assets/portfolioVisit.mp4" autoPlay loop muted ></video>
       </div>
 
-      <footer ref={footerRefrence}>
+      <footer className="p1Footer" ref={footerRefrence}>
        <BackArrow className="split"></BackArrow>
        <p> <a className="split" href="https://github.com/itsDipsyProjects/portfolio">GITHUB REPO</a></p>
       </footer>
